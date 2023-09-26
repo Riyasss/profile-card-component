@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+font-family: "Red Hat Display", sans-serif;
+min-height: 100vh;
+background-image: url(./images/pattern-background-desktop.svg);
+background-repeat: no-repeat;
+background-size: contain;
+background-color: hsl(210, 8%, 95%);
+position: relative;
+font-size: 16px;
+}
+
+
+.container {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+max-width: 400px;
+min-height: 50vh;
+background: white;
+border-radius: 20px;
+overflow: hidden;
+}
+
+.text{
+    padding: 7%;
+    text-align: center;
+}
+
+.title{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.text p.subtitle{
+    color: rgb(151, 147, 147);
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.box{
+    background-color:  hsl(227, 13%, 87%);
+    border-radius: 12px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-left{
+display: flex;
+align-items: center;
+text-align: left;
+}
+.box-left div{
+    margin-left: 15px;
+}
+
+.box-left div h5{
+    font-size: 15px;
+    font-weight: 900;
+    color:  hsl(223, 47%, 23%) ;
+}
+
+.box-left div p{
+    font-size: 15px;
+    margin-top: 10px;
+    
+    color:  rgb(156, 156, 156); ;
+}
+
+.box a{
+    font-size: 12px;
+    font-weight: 900;
+    color:  hsl(224, 82%, 32%) ;
+    
+}
+.box a:hover{
+    text-decoration: none;
+    color: hsl(245, 75%, 52%);
+
+}
+
+a.Payment{
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color:  hsl(245, 75%, 52%);
+    padding: 20px 0;
+    border-radius: 12px;
+    margin: 30px 0;
+}
+a.Payment:hover{
+    background-color: hsl(224, 23%, 55%);
+
+}
+
+a.Order{
+color: hsl(224, 23%, 55%);
+text-decoration: none;
+font-weight: 900;
+}
+
+a.Order:hover{
+color: hsl(223, 47%, 23%);
+}
+
+@media (min-width: 800px){
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Order summary card</title>
+</head>
+<body>
+<div class="container">
+  <div class="hero">
+    <img src="./images/illustration-hero.svg" alt="">
+  </div>
+  <div class="text">
+    <h2 class="title">Order Summary</h2>
+    <p class="subtitle">
+      You can now listen to millions of songs, audiobooks, and podcasts on any 
+      device anywhere you like!
+    </p>
+    <div class="box">
+      <div class="box-left">
+        <img src="./images/icon-music.svg" alt="">
+        <div>
+          <h5>Annual Plan</h5>
+          <p>$59.99/year</p>
+        </div>
+      </div>
+      <a href="#">Change</a>
+    </div>  
+      <a href="#" class="Payment">Proceed to Payment</a>
+      <a href="#" class="Order">Cancel Order</a>
+  </div>   
+</div>
+</body>
+</html>
+
+
